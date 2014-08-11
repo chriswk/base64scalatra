@@ -10,3 +10,9 @@ $ ./sbt
 ```
 
 If `browse` doesn't launch your browser, manually open [http://localhost:8080/](http://localhost:8080/) in your browser.
+
+## Encode to base64
+http://localhost:8080/encode?q=[STRINGTOENCODE]
+
+## Decode from base64
+http://localhost:8080/decode?q=[BASE64STRING]
