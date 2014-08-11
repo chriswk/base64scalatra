@@ -16,13 +16,11 @@ class Base64Servlet extends Base64funStack {
   }
 
   get("/encode") {
-    val x = params("q")
-    Base64.getEncoder().encodeToString(x.getBytes())
+    Base64.getEncoder().encodeToString(params("q").getBytes())
   }
 
   get("/decode") {
-    val x = params("q")
-    new String(Base64.getDecoder().decode(x))
+    new String(Base64.getDecoder().decode(params("q")))
   }
   
 }
