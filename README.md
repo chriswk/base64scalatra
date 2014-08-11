@@ -3,7 +3,7 @@
 ## Build & Run ##
 
 ```sh
-$ cd Base64Fun
+$ cd base64scalatra
 $ ./sbt
 > container:start
 > browse
