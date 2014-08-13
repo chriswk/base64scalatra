@@ -29,7 +29,11 @@ class Base64Servlet extends Base64funStack {
   }
   
   get("/sha") {
-	  MessageDigest.getInstance("SHA").digest(params("q").getBytes).map("%02X".format(_)).mkString
+	  MessageDigest.getInstance("SHA-1").digest(params("q").getBytes).map("%02X".format(_)).mkString
+  }
+  
+  get("/sha256") {
+	  MessageDigest.getInstance("SHA-256").digest(params("q").getBytes).map("%02X".format(_)).mkString
   }
   
 }
