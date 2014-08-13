@@ -25,7 +25,11 @@ class Base64Servlet extends Base64funStack {
   }
   
   get("/md5") {
-	  MessageDigest.getInstance("MD5").digest(params("q").getBytes()).map("%02X".format(_)).mkString
+	  MessageDigest.getInstance("MD5").digest(params("q").getBytes).map("%02X".format(_)).mkString
+  }
+  
+  get("/sha") {
+	  MessageDigest.getInstance("SHA").digest(params("q").getBytes).map("%02X".format(_)).mkString
   }
   
 }
