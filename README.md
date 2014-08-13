@@ -19,3 +19,6 @@ http://localhost:8080/decode?q=[BASE64STRING]
 
 ## Encode to md5 (hex)
 http://localhost:8080/md5?q=[STRINGTOENCODE]
+
+## Jenkins
+http://jenkins.chriswk.com
